@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Form Pendaftaran</title>
+    <style>
+        .center-text {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Formulir Pendaftaran Online</h1>
+    </div>
+    <form>
+        <div>
+            <!-- Bagian Formulir Pendaftaran
+             Dalam bagian Jurusan dan Program Studi saya menggunakan combo box agar lebih mudah untuk memilih jurusan dan prodi -->
+            <div>
+                <h3><label for="kuliah">Jurusan</label></h3>
+                    <select name="kuliah">
+                        <option>Teknologi Informasi Dan Komputer</option>
+                        <option>Pertanian</option>
+                        <option>Pemesinan</option>
+                        <option>Keperawatan</option>
+                    </select>
+                <h3><label for="program">Program Studi</label></h3>
+                    <select name="program">
+                        <option>D3 SI</option>
+                        <option>D4 TRPL</option>
+                        <option>D3 AGRO</option>
+                        <option>D3 MESIN</option>
+                        <option>D3 KEP</option>
+                    </select>
+            </div>
+            <!-- Bagian Biodata 
+             Dalam bagian -->
+            <div class="center-text">
+                <h2>Biodata</h2>
+            </div>
+            <div>
+                <h3><label for="nama"></label>Nama Lengkap</h3>
+                    <input type="text" name="nama"/>
+                <h3><label for="jenis"></label>Jenis Kelamin</h3>
+                    <input type="radio" />Laki-laki
+                    <input type="radio" />Perempuan
+                <h3><label for="tempat"></label>Tempat Lahir</h3>
+                    <input type="text" name="tempat"/>
+                <h3><label for="tanggal"></label>Tanggal Lahir</h3>
+                    <input type="date" name="tanggal"/>
+                <h3><label for="agama"></label>Agama</h3>
+                    <select name="agama">
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                    </select>
+                <h3><label for="sekolah"></label>Asal Sekolah</h3>
+                    <input type="text" name="sekolah"/>
+                <h3><label for="tahun"></label>Tahun Lulus</h3>
+                    <input type="text" name="tahun"/>
+                <h3><label for="jurusan"></label>Jurusan</h3>
+                    <input type="text" name="jurusan"/>
+                <h3><label for="kelas"></label>Kelas</h3>
+                    <input type="text" name="kelas"/>
+            </div>
+            <!-- Bagian Pendaftaran Akun -->
+            <div class="center-text">
+                <h2>Pendaftaran Akun</h2>
+            </div>
+            <div>
+                <h3><label for="email"></label>Email</h3>
+                    <input type="text" name="email"/>
+                <h3><label for="no"></label>No. Telepon</h3>
+                    <input type="text" name="no"/>
+                <h3><label for="pw"></label>Password</h3>
+                    <input type="text" name="pw"/>
+                <h3><label for="konfir"></label>Konfirmasi Password</h3>
+                    <input type="text" name="konfir"/>
+            </div>
+
+        <br>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
